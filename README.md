@@ -33,3 +33,4 @@ Command to run the flask app
 ```
     python app.py
 ```
+# student-performance-predict

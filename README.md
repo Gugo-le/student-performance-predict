@@ -26,7 +26,7 @@ Activate the environment
 
 
 ```
-    pip install -r requirements.txt
+    
 ```
 Command to run the flask app 
 

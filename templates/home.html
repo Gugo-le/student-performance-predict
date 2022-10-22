@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Student Performance</title>
+    <link href='https://fonts.googleapis.com/css2?family=Rubik&display=swap' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css2?family=Rubik&display=swap' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css2?family=Rubik&display=swap' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css2?family=Rubik&display=swap' rel='stylesheet' type='text/css'>
+
+
+</head>
+
+<body>
+    <div class="login">
+        <h1>student performance predict</h1>
+
+        <!-- Main Input For Receiving Query to our ML -->
+        <form action="{{ url_for('predict')}}" method="post">
+            AGE :<input type="number" min="15" max="22" value="22" name="age" placeholder="AGE" required="required" /><br><br/> Family Size:<select name="famsize" required="required">
+        <option value="1" selected>Less or Equal to 3</option>
+        <option value="0">Greater Than 3</option>
+      </select><br><br/> Fathers Education:<select name="Fedu" required="required">
+        <option value="1">primary education (4th grade)</option>
+        <option value="2">5th to 9th grade</option>
+        <option value="3">secondary education</option>
+        <option value="4">higher</option>
+        <option value="0" selected>None</option>
+      </select><br><br/> Reason to choose this school:<select name="reason" required="required">
+        <option value="1">close to home</option>
+        <option value="2">other</option>
+        <option value="3">school reputation</option>
+        <option value="0" selected>course preference</option>
+      </select><br><br/> Guardian:
+
+            <select name="guardian" required="required">
+        <option value="1">mother</option>
+        <option value="2">other</option>
+        <option value="0" selected>father</option>
+      </select><br><br/> Home to school travel time:<select name="traveltime" required="required">
+        <option value="1" selected>Less Than 15 min</option>
+        <option value="2">15 to 30 min</option>
+        <option value="3">30 min. to 1 hour</option>
+        <option value="4">Greater than 1 hour</option>
+      </select><br><br/> Weekly study time:<select name="studytime" required="required">
+        <option value="1" selected> Less Than 2 hours </option>
+        <option value="2">2 to 5 hours</option>
+        <option value="3"> 5 to 10 hours</option>
+        <option value="4">Greater than 10 hour</option>
+      </select><br><br/> number of past class failures:<input type="number" min="0" max="4" value="4" name="failures" placeholder="failures" required="required" /><br><br/> quality of family relationships:<select name="famrel" required="required">
+        <option value="1" selected> Very Bad </option>
+        <option value="2">Bad</option>
+        <option value="3"> Good</option>
+        <option value="4">Very Good</option>
+        <option value="5">Excellent</option>
+      </select><br><br/> FreeTime after school:<select name="freetime" required="required">
+        <option value="1" selected> Very Low </option>
+        <option value="2">Low</option>
+        <option value="3"> Average</option>
+        <option value="4">High</option>
+        <option value="5">Very High</option>
+      </select><br><br/> weekend alcohol consumption:<select name="walc" required="required">
+        <option value="1" selected> Very Low </option>
+        <option value="2">Low</option>
+        <option value="3"> Average</option>
+        <option value="4">High</option>
+        <option value="5">Very High</option>
+      </select><br><br/> Current health status:<select name="health" required="required">
+        <option value="1" selected> Very Bad </option>
+        <option value="2">Bad</option>
+        <option value="3"> Good</option>
+        <option value="4">Very Good</option>
+        <option value="5">Excellent</option>
+      </select><br><br/> First period grade(G1):<input type="number" min="0" max="20" name="G1" value="20" placeholder="G1" required="required" /><br><br> Second period grade(G2):<input type="number" min="0" max="20" name="G2" value="20" placeholder="G2"
+                required="required" /><br><br> Gender:
+
+            <select name="gender" required="required">
+        <option value="0" selected>Female </option>
+        <option value="1">Male</option>
+      </select><br><br/> number of school absences:<input type="number" min="0" max="93" value="93" name="absences" placeholder="absences" required="required" /><br><br> student's home address type:<select name="address" required="required">
+        <option value="0" selected>Rural </option>
+        <option value="1">Urban</option>
+      </select><br><br> extra educational support:<select name="schoolsup" required="required">
+        <option value="0" selected>no </option>
+        <option value="1">yes</option>
+      </select><br><br> family educational support:<select name="famsup" required="required">
+        <option value="0" selected>no </option>
+        <option value="1">yes</option>
+      </select><br><br> extra paid classes within the course subject (Math or Portuguese) :<select name="paid" required="required">
+        <option value="0" selected>no </option>
+        <option value="1">yes</option>
+      </select><br><br> extra curricular activities :<select name="activities" required="required">
+        <option value="0" selected>no </option>
+        <option value="1">yes</option>
+      </select><br><br> attended nursery school:<select name="nursery" required="required">
+        <option value="0" selected>no </option>
+        <option value="1">yes</option>
+      </select><br><br> wants to take higher education:<select name="higher" required="required">
+        <option value="0" selected>no </option>
+        <option value="1">yes</option>
+      </select><br><br> Internet access at home:<select name="internet" required="required">
+        <option value="0" selected>no </option>
+        <option value="1">yes</option>
+      </select><br><br> with a romantic relationship :<select name="romantic" required="required">
+        <option value="0" selected>no </option>
+        <option value="1">yes</option>
+      </select><br><br>
+
+
+
+
+            <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+        </form>
+
+        <br>
+        <br>
+
+
+    </div>
+    {{prediction_text}}
+
+</body>
+
+</html>

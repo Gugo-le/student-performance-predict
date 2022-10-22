@@ -25,9 +25,6 @@ Activate the environment
 ```
 
 
-```
-    
-```
 Command to run the flask app 
 
 ```

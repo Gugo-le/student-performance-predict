@@ -14,6 +14,7 @@
 4. [Heroku](https://www.heroku.com)
 ### 개발 일지
 1. [https://blog.naver.com/rngustmd0719/222907246265](https://blog.naver.com/rngustmd0719/222907246265)
+2. [https://blog.naver.com/rngustmd0719/222907403000](https://blog.naver.com/rngustmd0719/222907403000)
 
 Create a new environment
 

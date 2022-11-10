@@ -12,6 +12,8 @@
 2. [VSCode IDE](https://code.visualstudio.com)
 3. [Git CLI](https://git-scm.com/downloads)
 4. [Heroku](https://www.heroku.com)
+### 개발 일지
+1. [https://blog.naver.com/rngustmd0719/222907246265](https://blog.naver.com/rngustmd0719/222907246265)
 
 Create a new environment
 

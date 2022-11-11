@@ -43,5 +43,5 @@ tesorflow와 keras를 이용한 인공지능 학습
 <img src="./img4.png">
 <img src="./img5.png">
 <img src="./img6.png">
-## Learning model graphs
+### Learning model graphs
 <img src="./img7.png">

@@ -35,6 +35,8 @@ Command to run the flask app
 ```
 # student-performance-predict
 
+tesorflow와 keras를 이용한 인공지능 학습
+
 <img src="./img1.png">
 <img src="./img2.png">
 <img src="./img3.png">
